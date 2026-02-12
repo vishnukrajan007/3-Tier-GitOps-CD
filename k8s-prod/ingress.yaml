@@ -10,7 +10,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: adityajaiswal.com
+  - host: techinfoleadz.com
     http:
       paths:
       - path: /api
@@ -21,7 +21,7 @@ spec:
         pathType: Prefix
         backend:
           service: { name: frontend-svc, port: { number: 80 } }
-  - host: www.adityajaiswal.com
+  - host: www.techinfoleadz.com
     http:
       paths:
       - path: /api
@@ -33,5 +33,5 @@ spec:
         backend:
           service: { name: frontend-svc, port: { number: 80 } }
   tls:
-  - hosts: [adityajaiswal.com, www.adityajaiswal.com]
-    secretName: adityajaiswal-com-tls   # <-- consistent, .com
+  - hosts: [techinfoleadz.com, techinfoleadz.com]
+    secretName: techinfoleadz-com-tls   # <-- consistent, .com
