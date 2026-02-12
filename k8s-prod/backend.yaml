@@ -18,13 +18,12 @@ spec:
     spec:
       containers:
         - name: backend
-          image: 286119371104.dkr.ecr.ap-south-1.amazonaws.com/devsecops-backend:34920c2917688ad2a9ffe73d245c369b7f61c2d3
+          image: 286119371104.dkr.ecr.ap-south-1.amazonaws.com/devsecops-backend:49e0feb22de4c7b2595d14d2a82ad7df89fd3d28
           ports:
             - containerPort: 5000
           env:
             - name: DB_HOST
               value: mysql.prod.svc.cluster.local
-
             - name: DB_USER
               value: root
             - name: DB_PASSWORD
