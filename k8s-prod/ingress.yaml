@@ -27,7 +27,7 @@ spec:
                 name: frontend-svc
                 port:
                   number: 80
-    - host: www.techexelist.com
+    - host: techexelist.com
       http:
         paths:
           - path: /api
@@ -47,5 +47,4 @@ spec:
   tls:
     - hosts:
         - techexelist.com
-        - www.techexelist.com
       secretName: techexelist-com-tls
