@@ -23,7 +23,8 @@ spec:
             - containerPort: 5000
           env:
             - name: DB_HOST
-              value: mysql
+              value: mysql-0.mysql.prod.svc.cluster.local
+
             - name: DB_USER
               value: root
             - name: DB_PASSWORD
