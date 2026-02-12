@@ -80,6 +80,8 @@ spec:
       labels:
         app: mysql
     spec:
+      nodeSelector:
+        topology.kubernetes.io/zone: ap-south-1a   # <--- Added nodeSelector
       containers:
         - name: mysql
           image: mysql:8
